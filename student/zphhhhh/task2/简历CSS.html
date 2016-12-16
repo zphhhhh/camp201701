@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>张棚贺的简历</title>
+  <style>
+    h1 {
+      text-align: center;
+      padding-top: 2em;
+    }
+    
+    body {
+      margin: auto;
+      max-width: 50em;
+      margin: 0 auto;
+      padding: 0;
+      font-family: 'Microsoft Yahei';
+    }
+    
+    span {
+      display: inline-block;
+      width: 150px;
+    }
+    
+    .body {
+      background-color: #fafafa;
+    }
+    
+    ol,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    ol {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2em;
+    }
+    
+    ol > li:last-child {
+      margin-bottom: 2em;
+    }
+    
+    li {
+      position: relative;
+      list-style: none;
+      width: 100%;
+      text-align: center;
+    }
+    
+    ol > li > p {
+      position: relative;
+      text-align: center;
+      width: 6em;
+      margin: 1.5em auto 0.8em;
+      padding: 0.4em 1.2em;
+      background-color: #eee;
+      border-radius: 1em;
+      font-size: 1.125em;
+      z-index: 100;
+    }
+    
+    .hr {
+      position: absolute;
+      top: 2.9em;
+      width: 100%;
+      height: 1px;
+      background-color: #eee;
+      z-index: 1;
+    }
+    
+    .basic-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .basic-info li {
+      color: #666;
+      font-size: 15px;
+      margin: 5px 0;
+    }
+    
+    .basic-info .sex,
+    .basic-info .age,
+    .basic-info .education,
+    .basic-info .location {
+      padding: 0 5px;
+      width: auto;
+    }
+    
+    .basic-info .major,
+    .basic-info .school {
+      padding: 0 5px;
+      width: auto;
+    }
+    
+    .basic-info .telephone,
+    .basic-info .email {
+      padding: 0 15px;
+      width: auto;
+    }
+    
+    .project-info {
+      padding-left: 2em;
+    }
+    
+    .project-info li {
+      position: relative;
+      text-align: left;
+    }
+    
+    .project-info .title {
+      font-size: 1.05em;
+      margin: 0;
+    }
+    
+    .project-info data {
+      position: absolute;
+      top: 0;
+      right: 2em;
+      color: #bbb;
+    }
+    
+    .project-info .role {
+      color: #bbb;
+      font-size: 0.9em;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+    
+    .project-info .detail {
+      margin: 0;
+      margin-bottom: 2.6em;
+      font-size: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body">
+
+    <h1>张棚贺</h1>
+    <ol>
+      <li>
+        <p hidden>基本信息</p>
+        <ul class="basic-info">
+          <li>
+            <span class="sex">男</span>
+            <span class="age">2x岁</span>
+            <span class="education">硕士</span>
+            <span class="location">北京</span>
+          </li>
+          <li>
+            <span class="major">计算机技术</span>
+            <span class="school">北京理工大学</span>
+          </li>
+          <li><span class="telephone">137xxxxxxxx</span><span class="email">appxxx@163.com</span></li>
+        </ul>
+      </li>
+      <li>
+        <div class="hr"></div>
+        <p>教育经历</p>
+        <ul>
+          <li>北京理工大学，硕士，计算机技术，
+            <data>2016-2018</data>
+          </li>
+          <li>北京理工大学，本科，计算机科学与技术，
+            <data>2012-2016</data>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>相关技能</p>
+        <div class="hr"></div>
+        <ul>
+          <li><span>JavaScript</span>
+            <data value="100">★★★★★</data>
+          </li>
+          <li><span>HTML</span>
+            <data value="100">★★★★★</data>
+          </li>
+          <li><span>React</span>
+            <data value="80">★★★★☆</data>
+          </li>
+          <li><span>CSS / LESS</span>
+            <data value="80">★★★★☆</data>
+          </li>
+          <li><span>Python</span>
+            <data value="60">★★★☆☆</data>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>实习 & 项目</p>
+        <div class="hr"></div>
+        <ul class="project-info">
+          <li>
+            <p class="title">北京搜狗科技发展有限公司</p>
+            <data>2016.03 -- 2016.08</data>
+            <p class="role">前端开发实习生</p>
+            <p class="detail">开发内部项目管理系统，前端使用 angularjs 框架，后端使用 nodejs 。</p>
+          </li>
+          <li>
+            <p class="title">本科毕业设计</p>
+            <data>2015.12 -- 2016.03</data>
+            <p class="role">全责</p>
+            <p class="detail">项目名称：基于在线程序测评的社交平台设计与开发（桌面 Web 端） 项目简介：前端以 jQuery 框架，后端以 pyramid (基于 python )框架。项目分社交和测评两个模块。 主要职责：个人全责项目，毕业设计作品。</p>
+          </li>
+          <li>
+            <p class="title">大连东软睿道教育信息技术有限公司</p>
+            <data>2015.07 -- 2015.07</data>
+            <p class="role">前端开发工程师</p>
+            <p class="detail">某公司小区物业管理系统：以 jsp 渲染前端，servlet 处理逻辑，Oracle 作数据库。 主要为数据库表操作及 web 控制显示。 职责：贡献度 30% ，团队项目，负责主要的前端开发。</p>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</body>
+
+</html>

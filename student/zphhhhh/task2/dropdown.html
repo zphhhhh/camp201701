@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <style>
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .dropdown-menu li {
+            position: relative;
+            list-style: none;
+        }
+        
+        .dropdown-menu li > a {
+            display: block;
+            padding: 10px 20px;
+            text-align: center;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        
+        .dropdown-menu li:hover {
+            background: #ccc;
+        }
+        
+        .dropdown-menu li > ul {
+            display: none;
+        }
+        
+        .dropdown-menu li > ul li {
+            background: #ccc;
+        }
+        
+        .dropdown-menu li > ul li:hover {
+            background: #ddd;
+        }
+        
+        .dropdown-menu li:hover > ul {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+        }
+        
+        .dropdown-menu li:hover > ul li > ul {
+            top: 0;
+            left: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="dropdown-menu">
+        <li>
+            <a>一级菜单01</a>
+            <ul>
+                <li><a>二级菜单01</a></li>
+                <li><a>二级菜单02</a></li>
+                <li><a>二级菜单03</a></li>
+                <li><a>二级菜单04</a></li>
+                <li><a>二级菜单05</a></li>
+            </ul>
+        </li>
+        <li>
+            <a>一级菜单02</a>
+            <ul>
+                <li>
+                    <a>二级菜单01</a>
+                    <ul>
+                        <li><a>三级菜单01</a></li>
+                        <li><a>三级菜单02</a></li>
+                        <li><a>三级菜单03</a></li>
+                        <li><a>三级菜单04</a></li>
+                        <li><a>三级菜单05</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>二级菜单02</a>
+                    <ul>
+                        <li><a>三级菜单01</a></li>
+                        <li><a>三级菜单02</a></li>
+                    </ul>
+                </li>
+                <li><a>二级菜单03</a></li>
+                <li><a>二级菜单04</a></li>
+            </ul>
+        </li>
+        <li>
+            <a>一级菜单03</a>
+            <ul>
+                <li><a>二级菜单01</a></li>
+                <li>
+                    <a>二级菜单02</a>
+                    <ul>
+                        <li>
+                            <a>三级菜单01</a>
+                            <ul>
+                                <li><a>四级菜单01</a></li>
+                                <li><a>四级菜单02</a></li>
+                                <li><a>四级菜单03</a></li>
+                                <li><a>四级菜单04</a></li>
+                                <li><a>四级菜单05</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>三级菜单02</a>
+                            <ul>
+                                <li><a>四级菜单01</a></li>
+                                <li><a>四级菜单02</a></li>
+                                <li><a>四级菜单03</a></li>
+                                <li><a>四级菜单04</a></li>
+                                <li><a>四级菜单05</a></li>
+                            </ul>
+                        </li>
+                        <li><a>三级菜单03</a></li>
+                        <li><a>三级菜单04</a></li>
+                        <li><a>三级菜单05</a></li>
+                    </ul>
+                </li>
+                <li><a>二级菜单03</a></li>
+                <li><a>二级菜单04</a></li>
+                <li><a>二级菜单05</a></li>
+                <li><a>二级菜单05</a></li>
+                <li><a>二级菜单05</a></li>
+            </ul>
+        </li>
+        <li><a>一级菜单04</a></li>
+    </ul>
+    <ol>
+        <li>整体采用 flex 布局 + css:hover 效果完成了多级菜单。</li>
+        <li>制作多级菜单时，在二级菜单出现了“错位”的情况，每个 ul 前面都多出了一部分白，应该是浏览器原生样式导致，主动给 ul 增加了 0 宽的 margin 和 padding，解决。</li>
+        <li>emmet，写起来非常方便，赞。 </li>
+    </ol>
+</body>
+
+</html>
