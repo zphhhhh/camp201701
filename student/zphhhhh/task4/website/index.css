@@ -1,0 +1,428 @@
+body {
+    background-color: #ebebeb;
+    font-family: 'Microsoft Yahei', 'Sans-serif';
+}
+
+header {
+    border-bottom: 2px solid #ddd;
+}
+
+h1 {
+    width: 100%;
+    height: 222px;
+    line-height: 222px;
+    text-align: center;
+    background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+}
+
+h1 img {
+    max-width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    background: white;
+    
+}
+
+nav ul {
+    overflow: hidden;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 14px;
+    color: #555;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #e67e22;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #e67e22;
+}
+
+section {
+    margin: 30px 30px;
+}
+
+.body {
+    overflow: hidden;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/*aside {
+    float: right;
+    margin-left: 20px;
+    width: 30%;
+    word-break: break-all;
+}
+
+.content {
+    overflow: hidden;
+}*/
+
+aside {
+    float: left;
+    width: 30%;
+    word-break: break-all;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.content {
+    overflow: hidden;
+    float: left;
+    width: 70%;
+}
+
+.content__item {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 10px 40px 20px;
+    overflow: hidden;
+}
+
+.content__item--important {
+
+}
+
+.content__item-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    color: #222 ;
+}
+
+.content__item-info {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 2.5em;
+}
+
+.content__item-author {
+    color: #e67e22;
+}
+
+.content__item-date {
+    margin-left: 1em;
+}
+
+.content__item-img {
+    max-width: 100%;
+}
+
+.content__item-date::before {
+    content: '• ';
+}
+
+.content__item-abstract {
+    font: 400 18px/1.62 "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+    color: #333;
+}
+
+.content__item-article {
+    display: block;
+    margin: 30px 0;
+    padding: 9px 14px;
+    width: 4em;
+    text-decoration: none;
+    background-color: #e67e22;
+    border-radius: 2px;
+    color: white;
+    font-size: 0.9em;
+    transition: background .3s;
+}
+
+.content__item-article:hover {
+    background-color: #202020;
+    transition: background .3s;
+}
+
+.content__item-hr {
+    border-color: #dedede;
+    border-style: solid;
+    border-bottom: none;
+}
+
+.content__item-block {
+    margin-top: 30px;
+}
+
+.content__item-tags {
+    display: inline;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.content__item-tag {
+    display: inline;
+    margin-left: .5em;
+}
+
+.content__page {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.content__page-state,
+.content__page-next {
+    background-color: #e67e22;
+    padding: 9px 14px;
+    text-decoration: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 0.9em;
+}
+
+.aside {
+    margin-bottom: 30px;
+    padding: 30px 30px;
+    background-color: white;
+}
+
+.aside__header {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.aside__title {
+    position: relative;
+    padding-bottom: .25em;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.aside__body {
+    margin: 20px 0 0;
+}
+
+.aside__title::after {
+    content: '';
+    height: 1px;
+    width: 90px;
+    background-color: #e67e22;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+.aside__item {
+    margin: 20px 0 0;
+}
+
+.aside__item-link,
+.aside__item-link:visited,
+.aside__item-link:hover {
+    display: block;
+    margin: 20px 0 0;
+    padding: 9px 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e67e22;
+    border-radius: 2px;
+    color: white;
+    font-size: 0.9em;
+}
+
+.aside__media {
+    list-style: none;
+}
+
+.aside__media-item {
+    margin: 10px 0;
+}
+
+.aside__media-item a{
+    text-decoration: none;
+}
+
+.aside__media-item a:visited,
+.aside__media-item a:hover {
+    color: #e67e22;
+}
+
+.aside__body-tags {
+    list-style: none;
+}
+
+.aside__body-tag {
+    display: inline-block;
+    
+}
+
+.aside__body-tag a {
+    display: block;
+    padding: .3em .6em;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #888;
+    font-size: .9em;
+    margin: .25em 0;
+    transition: border .3s, background .3s, color .3s;
+}
+
+.aside__body-tag a:hover {
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+    color: white;
+    transition: border .3s, background .3s, color .3s;
+}
+
+footer {
+    margin-bottom: 30px;
+    padding: 30px 30px;
+    background: #202020;
+    color: white;
+    text-align: center;
+}
+
+.footer__item {
+    margin: 30px 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    text-align: left;
+}
+
+.footer__body {
+    list-style: none;
+}
+
+.footer__header {
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.footer__title {
+    position: relative;
+    padding-bottom: .25em;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.footer__body {
+    margin: 20px 0;
+}
+
+.footer__title::after {
+    content: '';
+    height: 1px;
+    width: 90px;
+    background-color: #e67e22;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+.footer__news {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px dashed #333;
+}
+
+.footer__news-title {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #aaa;
+    font-size: .833em;
+    transition: color .3s;
+}
+
+.footer__news-title:hover {
+    color: #e67e22;
+    transition: color .3s;
+}
+
+.footer__news-date {
+    color: #666;
+    font-size: .833em;
+}
+
+.footer__tag {
+    display: inline-block;
+}
+
+.footer__tag a {
+    display: block;
+    padding: .3em .6em;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #888;
+    font-size: .9em;
+    margin: .25em 0;
+    transition: border .3s, background .3s, color .3s;
+}
+
+.footer__tag a:hover {
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+    color: white;
+    transition: border .3s, background .3s, color .3s;
+}
+
+.footer__partners {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px dashed #333;
+}
+
+.footer__partners-list {
+    list-style: none;
+}
+
+.footer__partner {
+    display: inline-block;
+}
+
+.footer__partner a {
+    display: block;
+    padding: .3em .6em;
+    text-decoration: none;
+    color: #888;
+    font-size: .9em;
+    margin: .25em 0;
+    transition: background .3s, color .3s;
+}
+
+.footer__partner a:hover {
+    background-color: #e67e22;
+    color: white;
+    transition: background .3s, color .3s;
+}
+
+@media screen and (max-width: 960px) {
+  aside {
+      width: 100%;
+  }
+  .content {
+      width: 100%;
+  }
+}
